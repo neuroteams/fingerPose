@@ -1,8 +1,8 @@
-Как открыть openpose:
+﻿**Как открыть openpose:**
 
 docker run -it --rm --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=0 cwaffles/openpose
 
-как запустить openpose в работу:
+**Как запустить openpose в работу:**
 
 ./build/examples/openpose/openpose.bin --video examples/media/video.avi --write_json output/ --display 0 --render_pose 0 --face --hand
 
@@ -36,13 +36,26 @@ cat ./название_файла
 Выйти из контейнера:
 exit
 
-Ключи:
-Источники материала для анализа:
-Видео:
+##Об OpenPose
+Программа умеет:
+- В режиме реального времени строить 2D модель ключевых точек нескольких людей
+- В режиме реального времени строить 2D модель ключевых точек рук (21 точка на каждую руку) нескольких людей
+- В режиме реального времени строить 3D модель ключевых точек одного человека
+
+Входные данные:Image, video, webcam, Flir/Point Grey and IP camera. Included C++ demos to add your custom input.
+Выходные данные:Basic image + keypoint display/saving (PNG, JPG, AVI, ...), keypoint saving (JSON, XML, YML, ...), and/or keypoints as array class.
+
+Имеется Python API(doc/modules/python_module.md)
+
+Есть возможность улучшить скорость/уменьшиить затраты по времени
+
+##Ключи:
+###Источники материала для анализа:
+**Видео:**
 --video видеофайл.разрешение
-Фото:
+**Фото:**
 --image_dir папка_с_фото/ 
-Вебка:
+**Вебка:**
 без ключей
 
 
