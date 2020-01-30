@@ -33,6 +33,7 @@ docker run -it --rm --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=0 cwaffles/openpo
 - В режиме реального времени строить 2D модель ключевых точек нескольких людей
 - В режиме реального времени строить 2D модель ключевых точек рук (21 точка на каждую руку) нескольких людей
 - В режиме реального времени строить 3D модель ключевых точек одного человека
+- Существует возможность калибровать искажения/параметры,которые накладывает камера
 
 Входные данные: image, video, webcam, Flir/Point Grey and IP camera. Included C++ demos to add your custom input.
 Выходные данные: basic image + keypoint display/saving (PNG, JPG, AVI, ...), keypoint saving (JSON, XML, YML, ...), and/or keypoints as array class.
@@ -53,12 +54,21 @@ docker run -it --rm --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=0 cwaffles/openpo
 **Вебка:**
 без ключей
 
+
+### 
+**Сохранить результат в видео:**
+--write_video output/result.avi
+**Сохранить результат в json**
+--write_json output/
+
+=======
 ## Полезные команды Linux
 Перейти в папку с результатами:
 ```cd ./output```
 
 Посмотреть список файлов в папке:
 ```ls```
+
 
 Вывести содержимое файла:
 ```cat ./название_файла```
