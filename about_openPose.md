@@ -97,9 +97,9 @@ docker cp путь_к_файлу_на_сервере идентификатор_
 
 Важные страницы:
 
-О формате вывода данных: https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/output.md
+[О формате вывода данных:](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/output.md)
 
-Основные ключи (параметры) openpose:https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/demo_overview.md#main-flags
+[Основные ключи (параметры) openpose:](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/demo_overview.md#main-flags)
 
 ## Ключи:
 ### Источники материала для анализа:
