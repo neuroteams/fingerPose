@@ -64,19 +64,24 @@ docker run -it --rm --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=0 cwaffles/openpo
 
 ## Взаимодействие через docker
 Копировать файлы из openpose-контейнера на хост
+
 ```docker cp confident_booth:openpose/examples/media/video.avi ./openpose_files/video.avi```
 
 
 ## Полезные команды Linux
 Перейти в папку с результатами:
+
 ```cd ./output```
 
 Посмотреть список файлов в папке:
+
 ```ls```
 
 
 Вывести содержимое файла:
+
 ```cat ./название_файла```
 
 Выйти из контейнера:
+
 ```exit```
